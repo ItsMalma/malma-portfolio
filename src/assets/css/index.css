@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+	--color-*: initial;
+	--color-dark: #0a0a0a;
+	--color-light: #f5f5f5;
+
+	--breakpoint-*: initial;
+	--breakpoint-sm: 40rem;
+	--breakpoint-md: 48rem;
+	--breakpoint-lg: 64rem;
+	--breakpoint-xl: 80rem;
+
+	--container-*: initial;
+	--container-sm: 40rem;
+	--container-md: 48rem;
+	--container-lg: 64rem;
+	--container-xl: 80rem;
+
+	--font-*: initial;
+	--font-sans: "Geist", sans-serif;
+	--font-mono: "Geist Mono", monospace;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+	* {
+		@apply border-dark/50 dark:border-light/50;
+
+		scrollbar-width: thin;
+		scrollbar-color: --alpha(var(--color-dark) / 0.5);
+
+		@variant dark {
+			scrollbar-color: --alpha(var(--color-light) / 0.5);
+		}
+	}
+
+	body {
+		@apply bg-light dark:bg-dark text-dark dark:text-light m-0 font-sans;
+	}
+
+	button,
+	[role="button"] {
+		@apply cursor-pointer;
+	}
+}

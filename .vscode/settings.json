@@ -1,0 +1,15 @@
+{
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.codeActionsOnSave": {
+		"source.addMissingImports.ts": "always",
+		"source.organizeImports": "always",
+		"source.removeUnusedImports": "always"
+	},
+
+	"files.associations": {
+		"**/src/assets/css/index.css": "tailwindcss"
+	},
+
+	"typescript.preferences.importModuleSpecifier": "non-relative"
+}
