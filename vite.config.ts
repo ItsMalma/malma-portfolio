@@ -6,6 +6,9 @@ import react from "@vitejs/plugin-react-swc";
 import { defineConfig } from "vite";
 
 export default defineConfig({
+	server: {
+		allowedHosts: ["malma.web.id"],
+	},
 	plugins: [
 		tanstackRouter({
 			target: "react",
