@@ -4,4 +4,11 @@ import { IndexPage } from "#/components/pages";
 
 export const Route = createFileRoute("/")({
 	component: IndexPage,
+	head: () => ({
+		meta: [
+			{
+				title: "Malma - About",
+			},
+		],
+	}),
 });

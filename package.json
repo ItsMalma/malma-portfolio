@@ -11,9 +11,13 @@
 		"preview": "bunx --bun vite preview"
 	},
 	"dependencies": {
+		"@ark-ui/react": "5.29.1",
+		"@lucide/lab": "0.1.2",
 		"@tailwindcss/vite": "4.1.17",
 		"@tanstack/react-router": "1.136.8",
 		"@tanstack/react-router-devtools": "1.136.8",
+		"clsx": "2.1.1",
+		"date-fns": "4.1.0",
 		"lucide-react": "0.554.0",
 		"motion": "12.23.24",
 		"react": "19.2.0",
