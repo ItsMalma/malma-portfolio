@@ -1,9 +1,11 @@
 import { createRouter } from "@tanstack/react-router";
 
-import { routeTree } from "#/utils/generated/route-tree";
+import { routeTree } from "#/libs/generated/route-tree";
 
-export const router = createRouter({
+const router = createRouter({
 	routeTree,
 	defaultPreload: "intent",
 	defaultViewTransition: true,
 });
+
+export default router;

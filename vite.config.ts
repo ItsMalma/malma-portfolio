@@ -13,7 +13,7 @@ export default defineConfig({
 		tanstackRouter({
 			target: "react",
 			autoCodeSplitting: true,
-			generatedRouteTree: "src/utils/generated/route-tree.ts",
+			generatedRouteTree: "src/libs/generated/route-tree.ts",
 			customScaffolding: {
 				lazyRouteTemplate: "",
 				routeTemplate: "",

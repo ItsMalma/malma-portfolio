@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { flushSync } from "react-dom";
 
-import type { Theme } from "#/types/theme";
+import type { Theme } from "#/types/ui";
 
 const htmlElement = document.documentElement;
 
